@@ -1,0 +1,18 @@
+<resources>
+    <array name="department">
+        <item>Audiology</item>
+        <item>BioChemical Genetics</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="search_filter"><![CDATA[Search & Filter]]></string>
+    <string name="search_by_patient_id">Search by Patient ID</string>
+    <string name="filter_by_department">Filter by department</string>
+
+
+    <string name="app_name">AidenAssign2 Application</string>
+
+</resources>

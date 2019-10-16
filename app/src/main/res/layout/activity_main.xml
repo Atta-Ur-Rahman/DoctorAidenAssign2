@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_above"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/tv_custom_action_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginStart="10dp"
+            android:text="View Information"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/iv_search_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_search_black_24dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_below="@id/rl_above"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@android:color/holo_blue_bright"
+        app:tabMode="fixed" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sliding_tabs"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="135dp"
+        android:layout_height="match_parent"
+        android:id="@+id/myPatientRecycle"
+        android:paddingBottom="50dp"/>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:fab_addButtonColorNormal="@color/fabBackgroundColor"
+        app:fab_addButtonPlusIconColor="@color/cardview_light_background"
+        app:fab_labelStyle="@style/customFeb">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addPatient"
+            app:fab_colorNormal="@color/whiteColor"
+            app:fab_colorPressed="@color/whiteColor"
+            app:fab_icon="@drawable/add_patient"
+            app:fab_stroke_visible="true"
+            app:fab_size="mini"
+            app:fab_title="Add Patient" />
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addTest"
+            app:fab_colorNormal="@color/whiteColor"
+            app:fab_colorPressed="@color/whiteColor"
+            app:fab_icon="@drawable/add_test"
+            app:fab_size="mini"
+            app:fab_title="Add Test" />
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

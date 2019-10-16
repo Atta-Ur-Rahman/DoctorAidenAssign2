@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:padding="10dp"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvBloodp_title"
+        android:layout_width="@dimen/test_text_view_title_width"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="Blood Pressure : "
+        android:layout_below="@id/tvCholesterol_title"
+        android:textSize="@dimen/middle_text" />
+
+
+    <TextView
+        android:id="@+id/tvBloodPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/tvCholesterol_title"
+        android:layout_toRightOf="@+id/tvBloodp_title"
+        android:text="Positive"
+        android:textColor="@color/green"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCholesterol_title"
+        android:layout_width="@dimen/test_text_view_title_width"
+        android:layout_height="40dp"
+        android:layout_below="@id/tvTemperature"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="Cholesterol : "
+        android:textColor="@color/mainTextColor"
+        android:textSize="@dimen/middle_text" />
+
+    <TextView
+        android:id="@+id/tvCholesterol"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/tvCholesterol_title"
+        android:layout_below="@id/tvTemperature"
+        android:text="Cholesterol"
+        android:gravity="center_vertical"
+        android:textColor="@color/mainTextColor"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="12:33:21019"
+        android:textColor="@color/mainTextColor"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="@dimen/test_text_view_title_width"
+        android:layout_height="30dp"
+        android:textSize="@dimen/middle_text"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="Temperature : " />
+
+    <TextView
+        android:id="@+id/tvTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/tvTemperature"
+        android:text="90"
+        android:gravity="center_vertical"
+        android:textColor="@color/mainTextColor"
+        android:textSize="@dimen/title_text_size"
+        android:textStyle="bold" />
+
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="#eee" />
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="10dp"
+    android:id="@+id/rlAllPatient"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvDepartment"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_above="@id/viewLine"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_green"
+        android:text="Audiology"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvPatientName"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/viewLine"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Anna Adams"
+        android:textColor="@color/mainTextColor"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tvRoomNumTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="95dp"
+        android:text="Room :"
+        android:textSize="@dimen/middle_text" />
+
+    <TextView
+        android:id="@+id/tvRoomNum"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="4551A"
+        android:textColor="@color/mainTextColor"
+        android:textSize="@dimen/title_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNurseId"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Nurse ID # 1"
+        android:textSize="18dp" />
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="#eee" />
+
+
+</RelativeLayout>
